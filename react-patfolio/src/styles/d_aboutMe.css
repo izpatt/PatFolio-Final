@@ -1,0 +1,101 @@
+/* BY DEFAULT */
+
+.aboutMe {
+  background-image: url("../assets/bg-aboutMe.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  /* max-height: 100vh; */
+  margin: 0;
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+.aboutMeContainer {
+  padding-top: 7%;
+}
+
+.aboutCaptionImage {
+  width: 42%;
+  height: 20%;
+  margin-left: -3%;
+}
+
+.meCaptionImage {
+  width: 24%;
+  height: 10%;
+}
+
+.aboutMeSubtitle {
+  margin: 1%;
+  font-family: "Gaegu";
+  font-size: 4vw;
+}
+
+.myExperiencesCaption,
+.achievementsCaption,
+.coCurricularsCaption,
+.creativityCaption,
+.coCurricularHeader {
+  max-height: 42%;
+  margin-bottom: -3%;
+}
+
+.myExperiencesCaption:hover,
+.achievementsCaption:hover,
+.coCurricularsCaption:hover,
+.creativityCaption:hover,
+.coCurricularHeader:hover {
+  animation: bounce 2s ease 0s infinite normal forwards;
+}
+
+.button {
+  background-color: none;
+}
+
+/* Options */
+
+.col1-options {
+  display: inline;
+  text-align: right;
+}
+.col2-options {
+  display: inline;
+  text-align: left;
+}
+
+/* CELLPHONES */
+@media only screen and (max-width: 542px) {
+  .aboutMe {
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: repeat;
+  }
+
+  .aboutCaptionImage {
+    width: 60%;
+    margin-left: -3%;
+  }
+
+  .meCaptionImage {
+    width: 30%;
+  }
+
+  .aboutMeSubtitle {
+    font-size: 7vw;
+  }
+  .col1-options {
+    margin-bottom: -10%;
+    text-align: center;
+  }
+  .col2-options {
+    text-align: center;
+  }
+}
+
+/* TABLETS */
+@media only screen and (min-width: 767px) and (max-width: 1100px) {
+  .aboutMeSubtitle {
+    font-size: 5vw;
+  }
+}

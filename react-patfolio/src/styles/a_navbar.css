@@ -1,0 +1,133 @@
+.navbar {
+  background: rgba(238, 236, 236, 0.1);
+  padding: 0.8% 3%;
+  font-family: "Fuzzy Bubbles";
+  font-size: 22px;
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+.navbar-brand {
+  background-color: #8736aa;
+  width: max-content;
+  padding: 0.07% 1.5%;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.7rem !important;
+  font-family: "Gaegu";
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+.nav-link {
+  color: black;
+  font-size: 22px;
+}
+
+.navbar-brand:hover {
+  color: #ffe5fa;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  cursor: url("../assets/myCursor.png"), auto;
+}
+.nav-link:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #8736aa;
+  color: #a1038a;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+/* Desktop and laptops */
+@media only screen and (min-width: 1224px) {
+  .navbar-brand {
+    font-size: 2rem;
+    padding: 5% 15%;
+  }
+}
+
+/*NestHub*/
+@media only screen and (min-width: 1024px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+    padding: 5% 15%;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    font-size: large;
+  }
+  .nav-link {
+    font-size: medium;
+  }
+
+  .navbar {
+    background: rgba(233, 233, 233, 0.1);
+    padding: 0.8% 3%;
+    font-family: "Fuzzy Bubbles";
+    font-size: 22px;
+  }
+
+  .navbar-toggler-icon {
+    color: #8736aa;
+    margin-right: -10px;
+  }
+
+  a.nav-link {
+    color: #8736aa;
+    width: max-content;
+    text-shadow: 1px 0px 7px rgba(207, 150, 248, 0.94);
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  a.nav-link {
+    color: #8736aa;
+    width: max-content;
+    text-shadow: 1px 0px 7px rgba(207, 150, 248, 0.94);
+    font-size: xx-small;
+    padding: -100px;
+  }
+}
+
+/* Animations */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

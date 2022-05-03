@@ -1,0 +1,60 @@
+.bgImage {
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-position: "center center";
+  background-repeat: no-repeat;
+  height: auto;
+  margin: 0;
+  padding-bottom: 5%;
+  cursor: url("../assets/myCursor.png"), auto;
+
+  /* cursor: url("https://1.bp.blogspot.com/-NmbnDADABUE/XSfhUk_X2yI/AAAAAAAAFFw/5Tp7zt_8erg2AJ-aQ1VhYdH_l4nTReY7wCLcBGAs/s1600/cursor.png"),
+    default; */
+}
+
+.patFolioCaptionImage {
+  max-width: 80%;
+}
+
+.patFolioCaptionImage:hover {
+  animation: bounce 2s ease 0s infinite normal forwards;
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .bgImage {
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .patFolioCaptionImage {
+    margin-top: 1.8%;
+    margin-left: -3%;
+  }
+}
+
+/* Animations */
+@keyframes bounce {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}

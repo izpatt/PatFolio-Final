@@ -1,0 +1,47 @@
+.contactUs {
+  height: auto;
+  background: url("../assets/bg-contact.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  cursor: url("../assets/myCursor2.png"), auto;
+}
+
+.contactCaptionImage {
+  width: 45%;
+}
+
+.socmed {
+  width: 15%;
+  margin-bottom: 5%;
+}
+
+.socmed:hover {
+  animation: bounce 2s ease 0s infinite normal forwards;
+}
+
+/* TABLETS */
+@media only screen and (min-width: 552px) and (max-width: 1100px) {
+  .contactUs {
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  .contactCaptionImage {
+    width: 68%;
+  }
+}
+
+/* CELLPHONES */
+@media only screen and (max-width: 542px) {
+  .contactUs {
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: repeat;
+  }
+
+  .contactCaptionImage {
+    width: 80%;
+  }
+}

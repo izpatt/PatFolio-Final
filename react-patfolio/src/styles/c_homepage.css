@@ -1,0 +1,128 @@
+.homepage {
+  background-image: url("../assets/bg-homePage.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* max-height: 100vh; */
+  height: auto;
+  margin: 0;
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+/* COLUMN 1: Texts and Buttons */
+.col1-texts {
+  margin-top: 8%;
+  margin-bottom: 4%;
+  padding-left: 9%;
+}
+
+.subtitleHomepage {
+  font-size: 20px;
+  font-family: "Coming Soon";
+  text-align: center;
+  margin: 3%;
+}
+
+.viewResume {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  color: white;
+  font-family: "Gaegu";
+  font-size: 25px;
+  text-align: center;
+  border-radius: 28px;
+  border: 2px solid #c778e9;
+  background-color: #c289d6;
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+.viewResume-a-tag {
+  text-decoration: none;
+  color: white;
+}
+
+.viewResume-a-tag:hover {
+  text-decoration: none;
+  color: rgb(159, 49, 218);
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+.viewResume:hover {
+  border: 2px solid #c778e9;
+  background-color: rgb(253, 248, 248);
+  cursor: url("../assets/myCursor.png"), auto;
+}
+
+/* COLUMN 2: Image */
+.meImage {
+  padding-top: 12%;
+  min-width: 95%;
+  padding-right: 10%;
+}
+
+.meImage:hover {
+  animation: bounce 2s ease 0s infinite normal forwards;
+}
+/* TABLETS */
+@media only screen and (min-width: 767px) and (max-width: 1100px) {
+  .homepage {
+    background-image: url("../assets/bg-homePage.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .subtitleHomepage {
+    font-size: 2vw;
+  }
+
+  .viewResume {
+    font-size: 2.5vw;
+  }
+
+  .meImage {
+    padding-top: 25%;
+  }
+}
+
+/*CELLPHONES*/
+@media only screen and (max-width: 770px) {
+  .homepage {
+    background-image: url("../assets/bg-homePage-cpView.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* CELLPHONES */
+@media only screen and (max-width: 542px) {
+  .homepage {
+    background-image: url("../assets/bg-homePage-cpView.png");
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: repeat-y;
+  }
+
+  .subtitleHomepage {
+    font-size: 4vw;
+  }
+
+  .viewResume {
+    font-size: 5vw;
+  }
+
+  .meImage {
+    padding: 0%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .homepage {
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: repeat;
+  }
+}
