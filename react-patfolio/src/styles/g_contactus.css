@@ -19,6 +19,7 @@
 
 .socmed:hover {
   animation: bounce 2s ease 0s infinite normal forwards;
+  filter: drop-shadow(1px 1px 5px #cdcdcd);
 }
 
 /* TABLETS */
