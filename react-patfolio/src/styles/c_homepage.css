@@ -119,10 +119,11 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 767px) and (max-width: 1100px) {
   .homepage {
-    background-size: contain;
-    background-position: inherit;
+    background-image: url("../assets/bg-homePage.png");
+    background-size: cover;
+    background-position: center;
     background-repeat: repeat;
   }
 }

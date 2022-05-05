@@ -14,7 +14,7 @@ const telus =
 const list_organizations = [
   {
     organization: "TELUS International Philippines Inc. - Digital Solutions",
-    position: "Applications Developer and Support Intern",
+    position: "Application Developer Intern",
     duration: "February 2022 - May 2022",
     captions: [
       "⍟ Extensive training to be a Full Stack Developer. ",

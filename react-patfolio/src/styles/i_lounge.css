@@ -78,6 +78,12 @@
 
 /* CELLPHONES */
 @media only screen and (max-width: 542px) {
+  .lounge {
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: repeat;
+  }
+
   .loungeCaptionImage {
     width: 68%;
   }

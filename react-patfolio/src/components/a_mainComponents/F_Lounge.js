@@ -10,7 +10,6 @@ import React, { useState } from "react";
 import { ReactSketchCanvas } from "react-sketch-canvas";
 import axios from "axios";
 import swal from "sweetalert";
-import { Button } from "react-bootstrap";
 
 const styles = {
   border: "2px dashed brown",
