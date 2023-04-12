@@ -5,8 +5,20 @@ const peoplesChoice =
   "https://res.cloudinary.com/patfolio2022/image/upload/v1650980340/c_aboutMe/achievements/peoplesChoice_mmhmtv.png";
 const deansList =
   "https://res.cloudinary.com/patfolio2022/image/upload/v1650980346/c_aboutMe/achievements/deansList_ihqsjn.png";
+const quarterThreeTopAwardee =
+  "https://drive.google.com/uc?id=159iobwzpddUmTJBXPHSh30uKtBOIqO3k";
+
 
 const list_achievements = [
+  {
+    organization: "Quarter 3 Top Performer",
+    position: "Applications Development Associate",
+    duration: "October 2022",
+    captions: [
+      "⍟ Recognized as one of the top performers in Telus Agility Fulfillment Team - Product Catalogue just four months from the start of work ",
+    ],
+    images: quarterThreeTopAwardee,
+  },
   {
     organization: "3rd Place at Stanford IT Learning's Software Solutions",
     position: "Lead UI/UX Designer",

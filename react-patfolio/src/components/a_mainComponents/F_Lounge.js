@@ -24,6 +24,20 @@ const Lounge = () => {
   const [quotes, setQuotes] = useState("");
 
   const quoteList = {
+    method: "GET",
+    url: 'https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote',
+    params: {token: 'ipworld.info'},
+    headers: {
+      "content-type": "application/json",
+      'X-RapidAPI-Key': '16ba34d00bmshc5df0f3950a8ca5p1137dejsn7d23dfded5d4',
+      'X-RapidAPI-Host': 'quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com'
+    },
+ 
+  };
+
+ 
+
+  const quoteList1 = {
     method: "POST",
     url: "https://motivational-quotes1.p.rapidapi.com/motivation",
     headers: {
@@ -39,7 +53,7 @@ const Lounge = () => {
       .request(quoteList)
       .then(function (response) {
         setQuotes(response.data);
-        console.log(response.data);
+        console.log('Data:', response.data);
       })
       .catch(function (error) {
         console.error(error);
@@ -130,7 +144,7 @@ const Lounge = () => {
               ></img>
             </div>
             <div className="col-8 col-md-6 col-sm-7 col-lg-8 col-xs-6 col-quotes d-flex justify-content-center align-content-center">
-              {quotes ? <p className="quotes-text">{quotes}</p> : <p></p>}
+              {quotes ? <p className="quotes-text">{JSON.stringify(quotes.text)}</p> : <p></p>}
             </div>
             <div className="col-2 col-md-2 col-sm-1 col-lg-2 col-xs-1 offset"></div>
           </div>

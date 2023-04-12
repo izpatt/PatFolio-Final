@@ -11,9 +11,35 @@ const ieee =
 const telus =
   "https://res.cloudinary.com/patfolio2022/image/upload/v1651405075/c_aboutMe/experiences/telus_s9ho9i.png";
 
+const telus2 =
+  "https://drive.google.com/uc?id=1AkMOFp7fNsm0PjmxRXdaZ5qUJhbVVGA7";
+
 const list_organizations = [
   {
-    organization: "TELUS International Philippines Inc. - Digital Solutions",
+    organization: "TELUS International Philippines Inc. - Digital Solutions 2023",
+    position: "Applications Developer",
+    duration: "March 2023 - Present",
+    captions: [
+      "⍟ Member of TELUS Agility Fulfillment Team - Product Catalogue (TAFT-PC)",
+      "⍟ Jira · Cucumber BDD · Git · Netcracker · Kubernetes · MySQL",
+    ],
+    images: telus2,
+  },
+  {
+    organization: "TELUS International Philippines Inc. - Digital Solutions 2022",
+    position: "Application Development Associate",
+    duration: "June 2022 - March 2023",
+    captions: [
+      "⍟ Quarter 3 Top Performer (4 months - October 2022)",
+      "⍟ Member of TELUS Agility Fulfillment Team - Product Catalogue (TAFT-PC)",
+      "⍟ Analyzed, configured and developed 8+ projects for TELUS Product Catalogue requirements using NetCracker, Internal FIFA Cloud system and Git ",
+      "⍟ Jira · Cucumber BDD · Git · Netcracker · Kubernetes · MySQL",
+    ],
+    images: telus2,
+    
+  },
+  {
+    organization: "TELUS International Philippines Inc. - Code Your Career",
     position: "Application Developer Intern",
     duration: "February 2022 - May 2022",
     captions: [
